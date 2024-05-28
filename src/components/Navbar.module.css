@@ -1,0 +1,27 @@
+.navbar-wrapper {
+    padding: min(16px, 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.link-wrapper {
+    display: flex;
+    gap: clamp(16px, 1.5rem, 32px);
+    max-width: fit-content;
+    padding: 3px 12px;
+
+    a {
+        padding: 3px;
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: var(--color-black);
+        transition: transform 150ms ease-in-out;
+    }
+
+    a:hover {
+        /* filter: drop-shadow(0 1px rgba(var(--color-black), 0.5)); */
+        transform: scale(1.1);
+    }
+}
